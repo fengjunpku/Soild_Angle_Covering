@@ -7,7 +7,7 @@ sourcefile = maingeo.cc
 ROOTCFLAGS  = $(shell root-config --cflags)
 ROOTLIBS    = $(shell root-config --libs)
 
-CFLAGS = -Wall -O2 -I$(TARTSYS)/include -I$(ROOTSYS)/include -L$(TARTSYS)/lib -lXMLParser -lSpectrum
+CFLAGS = -Wall -O2 -I$(ROOTSYS)/include -lXMLParser -lSpectrum
 #-lanacore
 
 GXX = g++ 
