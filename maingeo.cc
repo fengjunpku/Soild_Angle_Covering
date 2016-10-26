@@ -13,10 +13,10 @@
 
 using namespace std;
 
-const double Theta[2]={20,45};//*deg
+const double Theta[2]={25,54};//*deg
 const double Size=50;//*mm
-const double Distance[2]={150,139};//*mm
-const double N = 150;//odd
+const double Distance[2]={150,140};//*mm
+const double N = 100;//odd
 const double eps = 1e-5;
 
 int main(int argc,char *argv[])
@@ -59,5 +59,6 @@ int main(int argc,char *argv[])
   c->cd();
   h->Draw("colz");
   theApp->Run();
+	delete theApp;
   return 0;
 }
